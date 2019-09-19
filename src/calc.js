@@ -1,50 +1,50 @@
 export class Calc{
-    constructor(planetname, age, planetyear, average){
-    this.planetname = planetname;
+    constructor(planetName, age, planetYear, average){
+    this.planetName = planetName;
     this.age = age;
-    this.planetyear = planetyear;
+    this.planetYear = planetYear;
 
     this.average = average;
     }
     
-    calculateplanetyear(){
-        this.averagebyplanet = (this.average * 365)/this.planetyear;   
-        this.agebyplanet = parseInt((this.age * 365)/this.planetyear);
+    calculateplanetYear(){
+        this.averageByPlanet = (this.average * 365)/this.planetYear;   
+        this.ageByPlanet = parseInt((this.age * 365)/this.planetYear);
     }
     calculateExpectancy(){
         this.expectancy = (this.average - this.age  );
-        this.expectancybyplanet = parseInt( this.averagebyplanet - this.agebyplanet);
+        this.expectancyByPlanet = parseInt( this.averageByPlanet - this.ageByPlanet);
     }
     outPut(){
         this.output = `Your age is ${this.age} and the average lifespan for your generation is ${this.average}.`;
-        if(this.agebyplanet == 0){
-            this.output += `You would be less than a year old on ${this.planetname}!`;
+        if(this.ageByPlanet == 0){
+            this.output += `You would be less than a year old on ${this.planetName}!`;
         }
         else{
-            this.output += `Your age on ${this.planetname} is ${this.agebyplanet}!`;
+            this.output += `Your age on ${this.planetName} is ${this.ageByPlanet}!`;
         }
         if(this.expectancy > 0){
             this.output += `You are most likely to live for ${Math.abs(this.expectancy)} more years!`;
         }
         if(this.expectancy<0){
-            this.output += `You've lived ${Math.abs(this.expectancybyplanet)} past life expectency!`;
+            this.output += `You've lived ${Math.abs(this.expectancyByPlanet)} past life expectency!`;
         }
-        if(this.expectancybyplanet > 0){
-            this.output += `You are most likely to live for ${Math.abs(this.expectancybyplanet)} more years!`;
+        if(this.expectancyByPlanet > 0){
+            this.output += `You are most likely to live for ${Math.abs(this.expectancyByPlanet)} more years!`;
         }
-        if(this.expectancybyplanet<0){
-            this.output += `You've lived ${Math.abs(this.expectancybyplanet)} past life expectency!`;
+        if(this.expectancyByPlanet<0){
+            this.output += `You've lived ${Math.abs(this.expectancyByPlanet)} past life expectency!`;
         }
         if(this.expectancy == 0){
             this.output += "Wow! You likely have less than a year left!";
         }
-        if(this.expectancybyplanet == 0){
-            this.output += `Wow! You would likely have less than a year left living on ${this.planetname}`;
+        if(this.expectancyByPlanet == 0){
+            this.output += `Wow! You would likely have less than a year left living on ${this.planetName}`;
         }
 return this.output;        
     }
     runcalcs(){
-    this.calculateplanetyear();
+    this.calculateplanetYear();
     this.calculateExpectancy();
     return this.outPut();
 
