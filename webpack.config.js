@@ -19,11 +19,7 @@ module.exports = {
       sourceMap: true
     }),
     new CleanWebpackPlugin(['docs']),
-    new HtmlWebpackPlugin({
-      title: 'RPG',
-      template: './src/index.html',
-      inject: 'body'
-    })
+
   ],
   module: {
     rules: [{
