@@ -1,6 +1,4 @@
-import {
-    Calc
-} from "../src/calc";
+import { Calc } from "../src/calc";
 let earth = new Calc("Earth", 27, 365, 75);
 let venus = new Calc("venus", 27, 224.7, 75);
 let mercury = new Calc("mercury", 27, 87.97, 75);
