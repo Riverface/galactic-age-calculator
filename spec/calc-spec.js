@@ -24,7 +24,7 @@ describe("the calculator for earth", function () {
         console.log(earth.runcalcs());
         expect(earth.agebyplanet).toBe(27);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(earth.runcalcs());
         expect(earth.expectancybyplanet).toBe(48);
     });
@@ -40,7 +40,7 @@ describe("the calculator for venus", function () {
         console.log(venus.runcalcs());
         expect(venus.agebyplanet).toBe(43);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(venus.runcalcs());
         expect(venus.expectancybyplanet).toBe(78);
     });
@@ -58,7 +58,7 @@ describe("the calculator for mercury", function () {
         console.log(mercury.runcalcs());
         expect(mercury.agebyplanet).toBe(112);
     });
-    it(` calculates age by planet properly`, function () {
+    it(` calculates expectancy by planet properly`, function () {
         console.log(mercury.runcalcs());
         expect(mercury.expectancybyplanet).toBe(199);
     });
@@ -75,7 +75,7 @@ describe("the calculator for mars", function () {
         console.log(mars.runcalcs());
         expect(mars.agebyplanet).toBe(14);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(mars.runcalcs());
         expect(mars.expectancybyplanet).toBe(25);
     });
@@ -92,7 +92,7 @@ describe("the calculator for jupiter", function () {
         console.log(jupiter.runcalcs());
         expect(jupiter.agebyplanet).toBe(2);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(jupiter.runcalcs());
         expect(jupiter.expectancybyplanet).toBe(4);
     });
@@ -109,7 +109,7 @@ describe("the calculator for saturn", function () {
         console.log(saturn.runcalcs());
         expect(saturn.agebyplanet).toBe(0);
     });
-    it(` calculates age by planet properly`, function () {
+    it(` calculates expectancy by planet properly`, function () {
         console.log(saturn.runcalcs());
         expect(saturn.expectancybyplanet).toBe(2);
     });
@@ -126,7 +126,7 @@ describe("the calculator for the funny butt planet", function () {
         console.log(uranus.runcalcs());
         expect(uranus.agebyplanet).toBe(117);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(uranus.runcalcs());
         expect(uranus.expectancybyplanet).toBe(208);
     });
@@ -144,7 +144,7 @@ describe("the calculator for neptune", function () {
         console.log(neptune.runcalcs());
         expect(neptune.agebyplanet).toBe(0);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(neptune.runcalcs());
         expect(neptune.expectancybyplanet).toBe(0);
     });
@@ -162,7 +162,7 @@ describe("the calculator for pluto", function () {
         console.log(pluto.runcalcs());
         expect(pluto.agebyplanet).toBe(0);
     });
-    it(`calculates age by planet properly`, function () {
+    it(`calculates expectancy by planet properly`, function () {
         console.log(pluto.runcalcs());
         expect(pluto.expectancybyplanet).toBe(0);
     });
