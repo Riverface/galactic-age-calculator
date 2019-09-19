@@ -8,18 +8,30 @@ export class Calc{
     }
     
     calculateplanetyear(){
-        this.averagebyplanet = average/planetyear;   
-        this.agebyplanet = (this.age * 365)/planetyear;
+        this.averagebyplanet = this.average/this.planetyear;   
+        this.agebyplanet = (this.age * 365)/this.planetyear;
     }
     calculateExpectancy(){
         this.expectancy = (this.age - this.average);
-        this.expectancybyplanet = agebyplanet - averagebyplanet;
+        this.expectancybyplanet = this.agebyplanet - this.averagebyplanet;
     }
     outPut(){
         this.output = `Your age is ${this.age} and the average lifespan for your generation is ${this.average}.`;
         this.output += `Your age on ${this.planetname} is ${this.agebyplanet}!`;
-        this.output += `Your life expectancy on Earth is ${this.expectancy}!`;
+        if(this.expectancy < 0){
+            this.output += `You are most likely to live for ${Math.abs(this.expectancy)} more years!`;
+        }
+        if(this.expectancy>0){
+            this.output += `You've lived ${parseMath.abs(this.expectancy)} past life expectency!`;
+        }
         this.output += `Your life expectancy on ${this.planetname} is ${this.expectancybyplanet}!`;
+return this.output;        
+    }
+    runcalcs(){
+    this.calculateplanetyear();
+    this.calculateExpectancy();
+    return this.outPut();
+
     }
 }
 
